@@ -1,7 +1,7 @@
-const InstrumentFamilies = require('./models/instrument_families.js');
-const SelectView = require('./views/select_view.js');
-const InstrumentFamilyView = require('./views/instrument_family_view.js');
-const data = require('./data/instrument_families.js');
+require InstrumentFamilies from './models/instrument_families.js';
+require SelectView from './views/select_view.js';
+require InstrumentFamilyView from './views/instrument_family_view.js';
+require instrumentFamily as data from './data/instrument_families.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const selectElement = document.querySelector('select#instrument-families');
