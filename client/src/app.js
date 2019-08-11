@@ -1,7 +1,7 @@
-require InstrumentFamilies from './models/instrument_families.js';
-require SelectView from './views/select_view.js';
-require InstrumentFamilyView from './views/instrument_family_view.js';
-require instrumentFamily as data from './data/instrument_families.js';
+import InstrumentFamilies from './models/instrument_families.js';
+import SelectView from './views/select_view.js';
+import InstrumentFamilyView from './views/instrument_family_view.js';
+import instrumentFamily as data from './data/instrument_families.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const selectElement = document.querySelector('select#instrument-families');
