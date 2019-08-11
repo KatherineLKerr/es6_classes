@@ -17,16 +17,18 @@ class InstrumentFamilyView {
   render(family) {
     this.container.innerHTML = '';
 
-    const familyName = this.createElement('h2', family.name);
+    var {name: name , description: description, instruments: instruments} = family;
+
+    const familyName = this.createElement('h2', name);
     this.container.appendChild(familyName);
 
-    const familyDescription = this.createElement('p', family.description);
+    const familyDescription = this.createElement('p', description);
     this.container.appendChild(familyDescription);
 
     const instrumentListTitle = this.createElement('h3', 'Instruments include:');
     this.container.appendChild(instrumentListTitle);
 
-    const instrumentList = this.createInstrumentList(family.instruments);
+    const instrumentList = this.createInstrumentList(instruments);
     this.container.appendChild(instrumentList);
   };
 
@@ -49,6 +51,10 @@ class InstrumentFamilyView {
   };
 
 };
+
+// In instrument_family_view.js refactor the `render` method to destructure the instrument
+// `family`'s properties as the `family` is passed into the function. This will mean you can
+// refer to the just the properties inside the function. For example, `name`, rather than `family.name`.
 
 // module.exports = InstrumentFamilyView;
 export default class InstrumentFamilyView;
