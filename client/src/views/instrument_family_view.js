@@ -50,4 +50,5 @@ class InstrumentFamilyView {
 
 };
 
-module.exports = InstrumentFamilyView;
+// module.exports = InstrumentFamilyView;
+export default class InstrumentFamilyView;

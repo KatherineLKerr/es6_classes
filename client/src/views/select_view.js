@@ -31,4 +31,5 @@ class SelectView {
 };
 
 
-module.exports = SelectView;
+// module.exports = SelectView;
+export default class SelectView;

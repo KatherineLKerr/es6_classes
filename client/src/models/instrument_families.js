@@ -23,4 +23,5 @@ class InstrumentFamilies {
 
 };
 
-module.exports = InstrumentFamilies;
+// module.exports = InstrumentFamilies;
+export default class InstrumentFamilies;
