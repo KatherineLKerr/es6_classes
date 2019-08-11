@@ -1,7 +1,7 @@
 // const PubSub = require('../helpers/pub_sub.js');
 import PubSub from '../helpers/pub_sub.js'
 
-class SelectView() {
+class SelectView {
 
   constructor(element) {
     this.element = element;
